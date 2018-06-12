@@ -12,12 +12,12 @@ notifications:
   email: false
 deploy:
   provider: heroku
-  f4fb4b6a-52f4-4132-b8ed-f6c5767fd062:
-    secure: pjp1Vko3bTHNf48wVcOkNtRv3IVB0XKLJsxtBYvPxK/ITwA4Ax5O9aek9WKm1OYwOV9o2jIP2foANnH+7xoq9btOdTkOXkYFSyGxKKutDjmcTXLrhRf9zbcUrp32lsvlSK+mfay7uqO9wqnShiJisUgULtjJ8FZJ94brcLdGGl3KSSetjxwvg1ixprW24YM+kaj2xBrA/XQ9qS0thNpeSX+S+v9PlYn5chuLjaTH95ZBxzTCbD8PK3kxy3dA0Z7bLVqtM3uhumxd36r7lVcdAVR9wYMHTrWqnmzsUKdEOUOq6t0MYptZbWu6s6bulpyko9yI+ie+TWm7MgjB+ltofQJobM1RRiUWi+hKy2LE3tAYN4UCQwZvy8taS95m2kP1REc467a/ozlkeuzw+Vo7e52TfdNJ0u+70Quy914tIGpylQJHSF9dpYgfD/p43TEV+1dqf3BJGwIhu0obTY9HEJWYdk75sO1EdptEMpNyDRfThzmiYTs2lcXnVFyuMCN39H6Wf22ccIWhPmQhkUgUsPGz4Fcle7YcGdWm7h3d9dZASwmDCAdWh9LJRF5gTrfqExmslT5n8/uAD68v+/cNGiGe1xvZOaw/u/eZXMbrrC1LgrB6MBPwTuBMOecYrbevmp8PYGmCItWLhSxdkPUfelzCNdFpnwbqvs5sZHmBN30=
+  YOUR_API_KEY:
+    secure: YOUR_SECURE_KEY
     app:
-    develop: https://shrouded-sands-20750.herokuapp.com/
-    master: https://aqueous-wave-82782.herokuapp.com/
+    develop: YOUR_DEVELOPMENT_APP
+    master: YOUR_PRODUCTION_APP
     on:
-    repo: ashishra0/rails_testing_integration_deployment
+    repo: GITHUB_UNAME/REPO_NAME
   run:
     - "rails db:migrate"
